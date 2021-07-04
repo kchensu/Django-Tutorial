@@ -3,18 +3,19 @@
   rel="stylesheet"
   href="{% static  'meetups/styles/meetup_details.css'%}"
 />
-{% endblock %} {% block title %} {{meetup_title}} {%endblock%} {%block body%}
+{% endblock %} {% block main_heading %} {{meetup_title}} {%endblock%} 
+{%block body%}
 <article>
   <img src="" alt="" />
 
   <section id="location">
-    <h2>Meetup location</h2>
+    <h2>Session location</h2>
     <address>
-      This meetup takes place in <span>LOCATION</span>(ADDRESS).
+      This session takes place in <span>LOCATION</span>(ADDRESS).
     </address>
   </section>
   <section id="details">
-    <h2>What is this meetup about?</h2>
+    <h2>What is this session about?</h2>
     <p>{{meetup_description}}</p>
     <footer>
       <p>

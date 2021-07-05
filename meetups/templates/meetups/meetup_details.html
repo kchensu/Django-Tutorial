@@ -5,6 +5,8 @@
 />
 {% endblock %} {% block main_heading %} {{meetup_title}} {%endblock%} 
 {%block body%}
+
+{% if meetup_found %}
 <article>
   <img src="" alt="" />
 
@@ -29,4 +31,7 @@
     FORM
   </section>
 </article>
+{%else%}
+<h3 style='text-align:center;'>No meetup found</h3>
+{%endif%}
 {%endblock%}

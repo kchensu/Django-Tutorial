@@ -2,15 +2,15 @@
   <article>
     <div class="meetup-summary">
       <div class="meetup-image">
-        <img src="" alt="" />
+        <img src="{{ image }}" alt="{{ title }}" />
       </div>
       <div class="meetup-details">
-        <h3>{{meetup.title}}</h3>
-        <address>{{meetup.location}}</address>
+        <h3>{{title}}</h3>
+        <address>{{location}}</address>
       </div>
     </div>
     <div class="meetup-actions">
-      <a href="{% url 'meetup_details' meetup.slug %}" class="btn"
+      <a href="{% url 'meetup_details' slug %}" class="btn"
         >More Details</a
       >
     </div>
